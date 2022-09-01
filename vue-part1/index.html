@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning Vue</title>
+  <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+  <h1>Hello, Vue :)</h1>
+  <div id="app">
+    <h2>{{ title }}</h2>
+    <p>The author of this tutorial is {{author}} and he is {{age}} years old.</p>
+    <button v-on:click="age++">Increase age</button>
+    <button v-on:click="age--">Decrease age</button>
+    <!-- <div @click="title='Reactjs Tutorial'">Change the title</div> -->
+    <!-- now v-on is replace with @. so below we just use @click -->
+    <!-- changeTitle is method receiving from app.js -->
+    <div @click="changeTitle('ReactJS')">Change the title</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
