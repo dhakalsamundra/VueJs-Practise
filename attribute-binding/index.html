@@ -21,10 +21,12 @@
     <!-- attribute binding -->
     <!--instead of using v-bind:href="url" we can use the short cut like :href="url" which is used below -->
     <a :href="url">Facebook Link</a>
+    
     <div v-if="showBooks">
        <ul>
           <!-- v-for like mapping json data from the array -->
           <li v-for="item in books">
+              <img :src="item.img" :alt="item.title">
               <h3>{{ item.title }}</h3>
               <p>{{ item.author }}</p>
           </li>

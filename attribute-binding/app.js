@@ -5,11 +5,10 @@ const app = Vue.createApp({
             url: "https://www.facebook.com",
             showBooks: true,
             books: [
-                {title: "Life of Pie", author: "samundra Dhakal"},
-                {title: "Silence is the meditation", author: "Narayan Sharma"},
-                {title: "Act is better that react", author: "Yojana Dhakal"},
-                {title: "Fly like the swift", author: "Sandesh Dhakal"}
-            ]
+                { title: 'name of the wind', author: 'patrick rothfuss', img: 'assets/1.jpg' },
+                { title: 'the way of kings', author: 'brandon sanderson', img: 'assets/1.png' },
+                { title: 'the final empire', author: 'brandon sanderson', img: 'assets/2.jpg' },
+              ],
         }
     },
     methods: {
